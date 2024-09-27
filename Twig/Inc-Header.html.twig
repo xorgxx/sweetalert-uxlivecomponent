@@ -1,0 +1,18 @@
+<a {{ stimulus_controller('neox-modal', {
+    title: 'Configuration ...' ,
+    text: 'Do you want to continue' ,
+    idElement: "NeoxDashHeader",   <== this is the id of the element component very important
+    url: path('[route-to-your-from]', { id: ["id-what-ever"] })
+
+}) }}
+    data-modal="modal"
+    data-action="click->neox-modal#modal"
+    class="nav-link"
+    href="#"
+>
+    <twig:ux:icon class="flex-shrink-0 icon-normal" name="fa6-solid:user-gear" width="30" style="height: auto;" color="black" />
+</a >
+
+idElement: "NeoxDashHeader",   <== this is the id of the element component very important
+this will be use to "speak" with your component ! normaly it suppose to de the sine name as the component name
+exemple : Twig/Components/NeoxDashHeader.php

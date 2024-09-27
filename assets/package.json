@@ -1,0 +1,34 @@
+{
+    "name": "@xorgxx/neox-dashboard-bundle",
+    "description": "Xorgxx| Neox Dash board integration for Symfony",
+    "license": "MIT",
+    "version": "1.0.0",
+    "main": "dist/neox_modal_controller.js",
+    "symfony": {
+        "controllers": {
+            "neox_modal": {
+                "main": "dist/neox_modal_controller.js",
+                "fetch": "eager",
+                "enabled": true
+            }
+        },
+        "assets": {
+            "path": "assets"
+        },
+        "importmap": {
+            "@hotwired/stimulus": "^3.0",
+            "bootstrap": "^5.0",
+            "sweetalert2": "^11.0"
+        }
+    },
+    "peerDependencies": {
+        "@hotwired/stimulus": "^3.0",
+        "bootstrap": "^5.0",
+        "sweetalert2": "^11.0"
+    },
+    "devDependencies": {
+        "@hotwired/stimulus": "^3.0",
+        "bootstrap": "^5.0",
+        "sweetalert2": "^11.0"
+    }
+}
